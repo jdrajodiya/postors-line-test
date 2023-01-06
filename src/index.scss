@@ -1,0 +1,51 @@
+/* Styles */
+.h-full { height: 100vh; }
+
+.button {
+    &-primary {
+        color: #FFFFFF;
+        background-color: #46139f;
+    }
+    
+    &-secondary {
+        background-color: #ff7f50;
+        color: #FFFFFF;
+    }
+
+    &-c-color {
+        background-color: #FFFFFF;
+        color: #46139f;
+        border-color: #46139f;
+        &:hover {
+            color: #46139f;
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+// Spinner
+.spinner-border {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.25em solid currentcolor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: .75s linear infinite spinner-border;
+}
+
+.spinner-sm {
+    width: 25px !important; 
+    height: 25px !important; 
+}
+
+.spinner-position {
+    position: fixed;
+    left: 48%;
+    top: 45%;
+}
+
+@keyframes spinner-border {
+    100% { transform: rotate(360deg); }
+}
+
